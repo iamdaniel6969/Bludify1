@@ -22,7 +22,7 @@ let updateTimer;
 
 const music_list = [
     {
-        img : 'images/don.PNG',
+        img : 'images/Don.PNG',
         name : 'Ay ay ay',
         artist : 'Blud who escaped from bill collector',
         music : 'music/Don Pollo x Automotivo Bibi Fogosa.mp3'
@@ -34,7 +34,7 @@ const music_list = [
         music : 'music/Memory Reboot x Don Pollo.mp3'
     },
     {
-        img : 'images/bill1.PNG',
+        img : 'images/Bill1.PNG',
         name : 'Death of bill collector',
         artist : 'Don Ohio',
         music : 'music/Himno de Ohio  Don pollo Lyrics.mp3'
