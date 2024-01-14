@@ -207,9 +207,21 @@ body {
     @media screen and (max-width: 600px) {
       .player {
         height: auto;
+        font-size: 80%;
+        font-size: 80%;
       }
       .wrapper {
-        padding: 15px;
+        padding: 20px;
+      }
+      .track-art {
+        height: 200px; /* 20% smaller height */
+        width: 200px; /* 20% smaller width */
+      }
+      .track-name {
+        font-size: 2em; /* Adjust as needed */
+      }
+      .track-artist {
+        font-size: 1.2em; /* Adjust as needed */
       }
       /* Add more adjustments as needed */
     }
@@ -217,7 +229,7 @@ body {
       /* Mobile styles here */
     }
     @media screen and (max-width: 480px) {
-      .rotate {
-        animation: none; /* Disable rotation animation on small screens */
-      }
-    }
+  .rotate {
+    animation: none; /* Disable rotation animation on small screens */
+  }
+}
