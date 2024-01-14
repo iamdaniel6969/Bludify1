@@ -216,6 +216,7 @@ body {
       .wrapper {
         padding: 20px;
         margin: 20px;
+        margin-top: 55px;
       }
       .track-art {
         height: 200px; /* 20% smaller height */
@@ -234,6 +235,32 @@ body {
     }
     @media screen and (max-width: 480px) {
       /* Mobile styles here */
+      body {
+        font-size: 80%; /* 80% of the original font size */
+      }
+     
+      .player {
+        height: auto;
+        
+      }
+      .wrapper {
+        padding: 20px;
+        margin: 20px;
+        margin-top: 55px;
+      }
+      .track-art {
+        height: 200px; /* 20% smaller height */
+        width: 200px; /* 20% smaller width */
+      }
+      .track-name {
+        font-size: 2em; /* Adjust as needed */
+      }
+      .track-artist {
+        font-size: 1.2em; /* Adjust as needed */
+      }
+      .details {
+        margin-top: 10px;
+      }
     }
     @media screen and (max-width: 480px) {
   .rotate {
