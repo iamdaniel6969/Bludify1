@@ -212,6 +212,7 @@ body {
       }
       .wrapper {
         padding: 20px;
+        margin-top: 20px;
       }
       .track-art {
         height: 200px; /* 20% smaller height */
@@ -222,6 +223,9 @@ body {
       }
       .track-artist {
         font-size: 1.2em; /* Adjust as needed */
+      }
+      .details {
+        margin-top: 10px;
       }
       /* Add more adjustments as needed */
     }
