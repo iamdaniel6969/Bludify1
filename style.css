@@ -205,14 +205,17 @@ body {
     }
     
     @media screen and (max-width: 600px) {
+      body {
+        font-size: 80%; /* 80% of the original font size */
+      }
+     
       .player {
         height: auto;
-        font-size: 80%;
-        font-size: 80%;
+        
       }
       .wrapper {
         padding: 20px;
-        margin-top: 20px;
+        margin: 20px;
       }
       .track-art {
         height: 200px; /* 20% smaller height */
