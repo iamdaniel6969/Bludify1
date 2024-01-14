@@ -206,10 +206,14 @@ body {
     
     @media screen and (max-width: 600px) {
       body {
+        margin-left: 55px;
+        margin-right: 55px;
         font-size: 80%; /* 80% of the original font size */
       }
      
       .player {
+        margin-left: 55px;
+        margin-right: 55px;
         height: auto;
         
       }
@@ -223,9 +227,11 @@ body {
         width: 200px; /* 20% smaller width */
       }
       .track-name {
+        margin-bottom: 3px;
         font-size: 2em; /* Adjust as needed */
       }
       .track-artist {
+        margin-bottom: 10px;
         font-size: 1.2em; /* Adjust as needed */
       }
       .details {
@@ -236,10 +242,14 @@ body {
     @media screen and (max-width: 480px) {
       /* Mobile styles here */
       body {
+        margin-left: 55px;
+        margin-right: 55px;
         font-size: 80%; /* 80% of the original font size */
       }
      
       .player {
+        margin-left: 55px;
+        margin-right: 55px;
         height: auto;
         
       }
@@ -253,9 +263,11 @@ body {
         width: 200px; /* 20% smaller width */
       }
       .track-name {
+        margin-bottom: 3px;
         font-size: 2em; /* Adjust as needed */
       }
       .track-artist {
+        margin-bottom: 10px;
         font-size: 1.2em; /* Adjust as needed */
       }
       .details {
