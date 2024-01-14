@@ -205,6 +205,7 @@ body {
     }
     
     @media screen and (max-width: 600px) {
+      
       body {
         margin-left: 55px;
         margin-right: 55px;
@@ -237,6 +238,17 @@ body {
       .details {
         margin-top: 10px;
       }
+      .rotate {
+        animation: rotation 8s infinite linear;
+    }
+    @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+    }
       /* Add more adjustments as needed */
     }
     @media screen and (max-width: 480px) {
@@ -275,7 +287,15 @@ body {
       }
     }
     @media screen and (max-width: 480px) {
-  .rotate {
-    animation: none; /* Disable rotation animation on small screens */
-  }
+      .rotate {
+        animation: rotation 8s infinite linear;
+    }
+    @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+    }
 }
