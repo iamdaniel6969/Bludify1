@@ -204,3 +204,20 @@ body {
         animation-delay: 0s;
     }
     
+    @media screen and (max-width: 600px) {
+      .player {
+        height: auto;
+      }
+      .wrapper {
+        padding: 15px;
+      }
+      /* Add more adjustments as needed */
+    }
+    @media screen and (max-width: 480px) {
+      /* Mobile styles here */
+    }
+    @media screen and (max-width: 480px) {
+      .rotate {
+        animation: none; /* Disable rotation animation on small screens */
+      }
+    }
