@@ -8,6 +8,10 @@ i {
   cursor: pointer;
   transition: all 0.3s;
 }
+.menu-link {
+  text-decoration: none; /* Removes default underlining */
+  color: inherit; /* Inherits the color from the parent */
+}
 
 i:hover {
   color: rgb(30, 174, 174);
