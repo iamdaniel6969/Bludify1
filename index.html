@@ -12,7 +12,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-   <div class="player">
+    <div class="container">
+        
+      <div class="top">
+        <i class="fas fa-bars menu-btn"></i>
+        <i class="fas fa-search"></i>
+      </div>  
+      
+     <div class="player">
        <div class="wrapper">
            <div class="details">
                <div class="now-playing">PLAYING x OF y</div>
@@ -49,11 +56,26 @@
                 <div class="repeat-track" onclick="repeatTrack()">
                     <i class="fa fa-repeat fa-2x" title="repeat"></i>
                 </div>
+                
            </div>
-
-            <div id="wave">
-            </div>  
+           <div class="list-wrapper">
+            <table class="list" id="playlist">
+                <tr class="song">
+                    <td class="no">
+                        <h5>1</h5>
+                    </td>
+                    <td class="title">
+                        <h6>Song title</h6>
+                    </td>
+                    <td class="length">
+                        <h5>2:03</h6>
+                    </td>
+                </tr>
+            </table>
+        </div>
        </div>
+       
    </div>
+</div>
 </body>
 </html>

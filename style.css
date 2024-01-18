@@ -1,4 +1,95 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  border-radius: 20px;
+  background-color: #ddd;
+}
+i {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+i:hover {
+  color: rgb(30, 174, 174);
+}
+
+i.active {
+  color: var(--primary-color);
+} 
+.player {
+  flex: 1; /* This makes the player div expand and take up remaining vertical space */
+  display: flex;
+  flex-direction: column;
+}
+.list-wrapper {
+  margin-top: 55%;
+  height: 425px;
+  width: 115%;
+  margin-left: 0px;
+
+  position: absolute;
+  top: 378px;
+  transform-origin: 0% 0%;
+  transition: all 0.3s;
+}
+
+.list {
+  width: 100%;
+  border-spacing: 0px 2px;
+}
+
+.list tr {
+  height: 50px;
+  text-align: center;
+  background-color: darkslategray;
+  text-indent: 8px;
+  transform-origin: 0% 50%;
+}
+
+.list tr:hover {
+  background-color: rgb(78, 135, 135);
+  cursor: pointer;
+}
+
+.list .title{
+  width: 215px;
+  text-align: left;
+  text-indent: 15px;
+  transition: all 0.3s;
+}
+
+.list tr:hover .title{
+  padding-left: 5px;
+  width: 210px;
+}
+
+.top {
+  width: 90%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 16px;
+  z-index: 10;
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
 body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(to right,#9a1d86, #1595be);
     font-weight: bold;
@@ -205,7 +296,14 @@ body {
     }
     
     @media screen and (max-width: 600px) {
-      
+      .container {
+        height: 650px;  
+        width: 366px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: #ddd;
+      }
       body {
         margin-left: 55px;
         margin-right: 55px;
@@ -217,6 +315,16 @@ body {
         margin-right: 55px;
         height: auto;
         
+      }
+      .list-wrapper {
+        margin-top: 62%;
+        height: 425px;
+        width: 112%;
+        overflow: auto;
+        position: absolute;
+        top: 378px;
+        transform-origin: 0% 0%;
+        transition: all 0.3s;
       }
       .wrapper {
         padding: 20px;
@@ -252,6 +360,15 @@ body {
       /* Add more adjustments as needed */
     }
     @media screen and (max-width: 480px) {
+      .container {
+        height: 650px;  
+        width: 366px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: #ddd;
+      }
+    
       /* Mobile styles here */
       body {
         margin-left: 55px;
@@ -264,6 +381,16 @@ body {
         margin-right: 55px;
         height: auto;
         
+      }
+
+      .list-wrapper {
+        margin-top: 62%;
+        height: 425px;
+        overflow: auto;
+        position: absolute;
+        top: 378px;
+        transform-origin: 0% 0%;
+        transition: all 0.3s;
       }
       .wrapper {
         padding: 20px;
@@ -286,7 +413,7 @@ body {
         margin-top: 10px;
       }
     }
-    @media screen and (max-width: 480px) {
+  
       .rotate {
         animation: rotation 8s infinite linear;
     }
@@ -298,4 +425,3 @@ body {
           transform: rotate(359deg);
         }
     }
-}
